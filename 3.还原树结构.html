@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+    /**
+    3.将数组 arr 转化为下方树结构。
+    */
+    var arr = [
+        { id: 102, pid: 1 },
+        { id: 103, pid: 1 },
+        { id: 10002, pid: 102 },
+        { id: 1, pid: 0 },     //根节点0
+    ]
+
+    var tree = [
+        {
+            "id": 1,
+            "pid": 0,
+            "children": [
+                {
+                    "id": 102,
+                    "pid": 1,
+                    "children": [
+                        {
+                            "id": 10002,
+                            "pid": 102
+                        }
+                    ]
+                },
+                {
+                    "id": 103,
+                    "pid": 1
+                }
+            ]
+        }
+    ]
+
+
+
+</script>
